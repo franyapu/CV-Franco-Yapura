@@ -1,0 +1,395 @@
+main {
+    margin-top: 120px;
+    padding: 0;
+    scroll-padding-top: 200px;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #f7efd8;
+    overflow: scroll;
+    
+    
+}   
+
+#ExperienciaLaboral:before {
+    content: "";
+    display: block;
+    height: 60px;
+    margin-top: -60px;
+}
+
+#datosA:before {
+    content: "";
+    display: block;
+    height: 90px;
+    margin-top: -90px;
+    scroll-margin-top: 100px
+}
+
+#estudiosA :before {
+    content: "";
+    display: block;
+    height: 60px;
+    margin-top: -60px;
+    scroll-margin-top: 100px
+}
+
+#cursos:before {
+    content: "";
+    display: block;
+    height: 60px;
+    margin-top: -60px;
+}
+
+a {
+    text-decoration: none;
+    color: #273142;
+}
+
+nav a {
+    margin: 0px;
+    height: 10px;
+    width: 10px;
+    padding: 20px 25px;
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: #737362;
+    box-shadow: 0px 0px 100px #4f4f42;
+}
+
+header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0px; 
+    background-color: #c8c8a9;
+    min-height: 50px; 
+    position: fixed;
+    z-index: 1000;
+    
+}
+
+.logo {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+}
+
+
+.Foto img {
+    padding: 20px;
+    max-width: 250px;
+    height: auto;
+    border-radius: 20%;
+    justify-content: left;
+}
+
+.foto_estudios img {
+    padding: 20px;
+    max-width: 250px;
+    height: auto;
+    border-radius: 20%;
+    justify-content: left;
+}
+
+
+legend {
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 10%;
+    margin: 5px;
+    display: block;
+    text-decoration: underline;
+}
+
+.datos {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border: 2px solid;
+    border-radius: 10%;
+    margin: 60px 20px 20px 20px;
+}
+
+.Personales {
+    max-width: 1000px;
+    text-align: justify;
+    font-size: 15px;
+    padding: 40px 70px;
+    line-height: 2;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+}
+
+.Personales li {
+    text-align: justify;
+}
+
+.Personales ul {
+    
+    padding-left: 20px;
+    text-align: justify;
+}
+
+.redes:hover {
+    font-weight:bold;
+    
+}
+
+.Estudios {
+    max-width: 1000px;
+    text-align: justify;
+    font-size: 15px;
+    padding: 40px 70px;
+    line-height: 2;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+}
+
+.carruselEstudios {
+    width: 1280px;
+    height: auto;
+    margin: 50px auto 0;
+    overflow: hidden;
+}
+
+.carruselEstudios ul {
+    display: flex;
+    padding: 0;
+    width: 100%;
+    animation: slide 15s infinite alternate ease-in-out;
+}
+
+.carruselEstudios li {
+    width: 100%;
+    list-style: none;
+    position: relative;
+}
+
+.carruselEstudios h1 {
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+    
+}
+
+.textoEstudios {
+    position: absolute;
+    text-align: center;
+    
+    padding: 0 260px 0 250px;
+    top: 250px;
+    background-color: rgba(39,49,66, 0.5);
+    color: white;
+}
+
+.textoEstudios h2 {
+    font-size: 45px;
+    margin-bottom: 35px;
+}
+
+.carruselEstudios img {
+    width: 1280px;
+    height: 600px;
+    
+}
+
+.ExperienciaLaboral h1 {
+    font-weight: bold;
+    align-items: center;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.ExperienciaLaboral h6 {
+    align-items: center;
+    text-align: center;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.Buenardopolis {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+
+
+.imagenesLaborales {
+    position: relative;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.imagenesLaborales img {
+    width: 450px;
+    height: 350px;
+    display: none;
+    scroll-margin-top: 150px;
+}
+
+
+.imagenesLaborales img:target {
+    display: block;
+}
+
+.imagenesLaborales img:target:before {
+    content: "";
+    display: block;
+    height: 80px;
+    margin-top: -80px;
+}
+
+.TextoLaboral {
+    max-width: 800px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    text-align: justify;
+    line-height: 2;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+
+}
+
+.TextoLaboral a:hover {
+    font-weight: bold;
+}
+
+.TextoLaboral a {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.TextoLaboral ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.cursos2 h1 {
+    text-align: center;
+    font-size: 30px;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    text-decoration: underline;
+}
+
+.FieldCursos {
+    border-radius: 5%;
+    margin: 20px; 
+}
+
+.TextoCursos {
+    column-gap: 20px;
+    column-count: 2;
+    column-rule-color: #273142;
+    column-rule-style: dotted;
+    column-rule-width: 3px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    text-align: justify;
+    line-height: 2;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+th {
+    background-color: #1d2430;
+    color: white;
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 2px solid #ddd;
+}
+
+td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+    background-color: #718dbd;
+}
+
+.hola td {
+    background-color: #344157;
+    text-align: center;
+    color: white;
+}
+
+.lenguaje2 {
+    text-align: center;
+    text-decoration: underline;
+    margin: 60px 20px 40px 20px;
+}
+
+@keyframes slide {
+    0% {margin-left: 0;}
+    30% {margin-left: 0;}
+
+    35% {margin-left: -100%;}
+    65% {margin-left: -100%;}
+
+    70% {margin-left: -200%;}
+    100% {margin-left: -200%;}
+
+}
+
+
+
+@media (max-width: 700px) {
+    body { 
+        padding: 30px;
+    }
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        padding: 10px 0px;
+    }
+    nav a {
+        height: 10px;
+        width: 10px;
+        padding: 5px 25px;
+        text-align: center;
+    }
+
+    .carruselEstudios {
+        width: 340px;
+    }
+    .textoEstudios {
+        top: 50px;
+        padding: 0;
+    }
+
+    .textoEstudios h2 {
+        font-size: 35px;
+    }
+    .textoEstudios h3 {
+        font-size: 25px;
+    }
+    .textoEstudios p {
+        font-size: 18px;
+    }
+}
